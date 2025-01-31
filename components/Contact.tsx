@@ -5,10 +5,10 @@ import React, { useState } from "react";
 const Contact = () => {
   const [result, setResult] = useState("");
 
-  const onSubmit = async (event: any) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.target as HTMLFormElement);
 
     formData.append("access_key", "70483396-f447-44e8-b11d-e24cc86550c3");
 
@@ -24,7 +24,7 @@ const Contact = () => {
       setTimeout(() => {
         setResult("");
       }, 5000);
-      event.target.reset();
+      (event.target as HTMLFormElement).reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
