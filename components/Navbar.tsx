@@ -86,7 +86,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`md:hidden h-[50vh] w-2/3 absolute right-0 top-0 bg-white/95 shadow-xl shadow-slate-200 px-8 py-10 transition-all duration-300 ease-in-out ${
+          className={`md:hidden h-[60vh] w-2/3 absolute right-0 top-0 bg-white shadow-xl shadow-slate-200 px-8 py-10 transition-all duration-300 ease-in-out ${
             isMobileMenuOpen
               ? "transform scale-100 opacity-100"
               : "transform scale-0 opacity-0"

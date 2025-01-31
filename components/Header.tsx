@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div
       id="home"
-      className="pt-12 w-full min-h-screen flex items-center justify-center flex-col relative overflow-hidden"
+      className="md:pt-12 pt-20 w-full min-h-screen flex items-center justify-center flex-col relative overflow-hidden"
     >
       {/* Profile Image */}
       <motion.div
@@ -16,11 +16,7 @@ const Header = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
-        <Image
-          src={assets.me}
-          alt=""
-          className="md:w-28 w-40 h-40 md:h-28 rounded-full z-10"
-        />
+        <Image src={assets.me} alt="" className="w-28 h-28 rounded-full z-10" />
       </motion.div>
 
       {/* Title and Description */}
@@ -28,7 +24,7 @@ const Header = () => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="my-5 text-2xl z-10"
+        className="md:my-5 my-2 text-xl md:text-2xl z-10"
       >
         Hi, I am Kaif 👋
       </motion.h2>
@@ -37,7 +33,7 @@ const Header = () => {
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="md:text-4xl text-3xl text-center"
+          className="md:text-4xl text-2xl text-center"
         >
           Full Stack Web and App Developer
         </motion.h1>
@@ -47,7 +43,7 @@ const Header = () => {
           initial={{ y: -40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.6 }}
-          className="md:text-center text-start"
+          className="md:text-center text-start text-[16px] line-clamp-6 md:text-xl"
         >
           I am a Full Stack Developer with a strong focus on building scalable,
           user-friendly web and mobile applications. With expertise in front-end

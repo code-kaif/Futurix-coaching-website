@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import React from "react";
 
 const Projects = () => {
@@ -65,7 +64,7 @@ const Projects = () => {
               key={project.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <Image
+              <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover"
