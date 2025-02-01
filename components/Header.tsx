@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div
       id="home"
-      className="md:pt-12 pt-20 w-full min-h-screen flex items-center justify-center flex-col relative overflow-hidden"
+      className="md:pt-12 pt-10 w-full min-h-screen flex items-center justify-center flex-col relative overflow-hidden"
     >
       {/* Profile Image */}
       <motion.div
