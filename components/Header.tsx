@@ -78,7 +78,7 @@ const Header = () => {
           alt="Header Image"
           width={800}
           height={600}
-          className="object-cover w-full h-full rounded-lg shadow-lg blur"
+          className="object-cover w-full h-full rounded-lg shadow-lg"
           priority // Ensure the image loads first
         />
       </motion.div>
