@@ -1,89 +1,3 @@
-// "use client";
-// import { assests } from "../app/assets/assets"; // Ensure this path is correct
-// import Image from "next/image";
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
-// const Header = () => {
-//   return (
-//     <div
-//       id="home"
-//       className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center relative p-4 md:p-12"
-//     >
-//       {/* Left Side: Text Content */}
-//       <div className="w-full md:w-1/2 flex flex-col items-start justify-center space-y-4 md:space-y-6 z-20 p-4 md:p-8">
-//         {/* Title */}
-//         <motion.h1
-//           initial={{ y: 20, opacity: 0 }}
-//           whileInView={{ y: 0, opacity: 1 }}
-//           transition={{ duration: 0.8, delay: 0.3 }}
-//           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900"
-//         >
-//           Futurix Coaching App
-//         </motion.h1>
-
-//         {/* Subtitle */}
-//         <motion.h2
-//           initial={{ y: 20, opacity: 0 }}
-//           whileInView={{ y: 0, opacity: 1 }}
-//           transition={{ duration: 0.8, delay: 0.5 }}
-//           className="text-lg sm:text-xl md:text-2xl font-medium text-gray-700"
-//         >
-//           Your Personal AI-Powered Coaching Companion
-//         </motion.h2>
-
-//         {/* Description */}
-//         <motion.p
-//           initial={{ y: 20, opacity: 0 }}
-//           whileInView={{ y: 0, opacity: 1 }}
-//           transition={{ duration: 0.8, delay: 0.7 }}
-//           className="text-base sm:text-lg md:text-xl text-gray-600"
-//         >
-//           Transform your life with Futurix Coaching App. Our AI-driven platform
-//           provides personalized coaching, actionable insights, and real-time
-//           feedback to help you achieve your goals faster and smarter.
-//         </motion.p>
-
-//         {/* Download Button */}
-//         <motion.div
-//           initial={{ y: 20, opacity: 0 }}
-//           whileInView={{ y: 0, opacity: 1 }}
-//           transition={{ duration: 0.8, delay: 0.9 }}
-//           className="flex items-center gap-2 cursor-pointer text-white bg-blue-600 px-6 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-blue-700 transition-all duration-300"
-//         >
-//           <a
-//             href="./futurixcoaching.apk" // Replace with your APK path
-//             download
-//             className="text-sm sm:text-lg font-medium"
-//           >
-//             Download App
-//           </a>
-//           <FontAwesomeIcon
-//             icon={faDownload}
-//             className="w-4 h-4 sm:w-5 sm:h-5"
-//           />
-//         </motion.div>
-//       </div>
-
-//       {/* Right Side: Image with Blur */}
-//       <div className="w-full md:w-1/2 h-[50vh] sm:h-[60vh] md:h-[75vh] relative z-10 md:flex items-center justify-center mt-8 md:mt-8 hidden">
-//         <Image
-//           src={assests.header} // Replace with your image path
-//           alt="Header Image"
-//           width={800} // Set appropriate width
-//           height={600} // Set appropriate height
-//           className="object-cover blur-[2px] w-full h-full rounded-lg shadow-lg"
-//           priority // Ensure the image loads first
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
 "use client";
 
 import { assests } from "../app/assets/assets"; // Ensure this path is correct
@@ -164,7 +78,7 @@ const Header = () => {
           alt="Header Image"
           width={800}
           height={600}
-          className="object-cover w-full h-full rounded-lg shadow-lg"
+          className="object-cover w-full h-full rounded-lg shadow-lg blur"
           priority // Ensure the image loads first
         />
       </motion.div>
