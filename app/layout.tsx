@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Kaif - Portfolio",
+  title: "Futurix Coaching",
   description: "",
 };
 

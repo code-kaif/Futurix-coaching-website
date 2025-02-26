@@ -11,11 +11,11 @@ export default function Home() {
     <div className="md:px-20 px-10">
       <Navbar />
       <Header />
-      <About />
+      {/*<About />
       <Services />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
